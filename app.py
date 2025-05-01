@@ -90,12 +90,12 @@ st.markdown(
 prompt = ChatPromptTemplate.from_messages([
     ("system", (
         "You are a helpful, concise, and intelligent AI assistant. "
-        "You have access to a **Tavily search tool** which provides web results. "
+        "You have access to a **Search tool** which provides web results. "
         "Use this tool **only when the user asks about recent, factual, or specific information** "
         "that you are not confident about or that may have changed (e.g., current events, news, live data, etc).\n\n"
         "If the user's question is general, conversational, or something you already know with high certainty, "
         "**respond directly without calling the tool**.\n\n"
-        "When using the tool, take its output as context and clearly present the final answer after reviewing the result"
+        "When using the tool, take its output as context and clearly present the final answer after reviewing the result in structured format"
     )),
     ("human", "{input}")
 ])
